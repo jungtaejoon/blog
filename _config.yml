@@ -23,8 +23,8 @@ projects:
   claude-warmup:
     name: claude-warmup
     tagline:
-      ko: 곁가지 프로젝트 · Claude 5시간 한도 리셋 시간 맞추기
-      en: Side project · time your Claude 5-hour limit resets
+      ko: 곁가지 프로젝트 · Claude 5시간 창을 늘 켜 두기
+      en: Side project · keep a Claude 5-hour window always running
     url:
       ko: https://jungtaejoon.github.io/claude-warmup/ko/
       en: https://jungtaejoon.github.io/claude-warmup/
