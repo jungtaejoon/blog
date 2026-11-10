@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{%- assign L = page.lang | default: "ko" -%}
+{%- assign t = site.data.i18n[L] -%}
+{%- if L == "en" %}{% assign home = "/en/" %}{% else %}{% assign home = "/" %}{% endif -%}
+<div class="intro">
+{{ content }}
+</div>
+{% assign mine = site.posts | where: "lang", L %}
+{% assign main = mine | where: "project", "slop" %}
+<section>
+  <h2 class="list-h"><a href="{{ home | append: 'slop/' | relative_url }}">Slop</a> <span>{{ t.main_project }}</span></h2>
+  {% include post-list.html posts=main %}
+</section>
+{% assign side = mine | where_exp: "p", "p.project != 'slop'" %}
+<section>
+  <h2 class="list-h"><a href="{{ home | append: 'claude-warmup/' | relative_url }}">{{ t.side_projects }}</a> <span>{{ t.side_sub }}</span></h2>
+  {% include post-list.html posts=side %}
+</section>

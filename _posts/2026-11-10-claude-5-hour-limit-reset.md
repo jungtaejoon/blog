@@ -2,6 +2,7 @@
 title: "Claude 5시간 한도, 리셋 시간을 일하는 중간으로 옮기는 법"
 description: Slop을 만들다 정오마다 Claude 한도에 걸려서, 출근 전에 5시간 창을 미리 열어 두는 작은 도구 claude-warmup을 만들었어요.
 project: claude-warmup
+ref: claude-5-hour-limit-reset
 image: https://jungtaejoon.github.io/claude-warmup/og.png
 ---
 

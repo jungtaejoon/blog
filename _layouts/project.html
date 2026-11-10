@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
+{%- assign L = page.lang | default: "ko" -%}
+{%- assign t = site.data.i18n[L] -%}
 {% assign proj = site.projects[page.project] %}
 <div class="intro">
-  <p class="kicker">{{ proj.tagline }}</p>
+  <p class="kicker">{{ proj.tagline[L] }}</p>
   <h1>{{ proj.name }}</h1>
   {{ content }}
-  <p><a class="btn primary" href="{{ proj.url }}">{{ proj.name }} 바로가기 →</a></p>
+  <p><a class="btn primary" href="{{ proj.url[L] }}">{{ proj.name }} {{ t.go }} →</a></p>
 </div>
-{% assign posts = site.posts | where: "project", page.project %}
-<h2 class="list-h">글 {{ posts | size }}개</h2>
+{% assign posts = site.posts | where: "project", page.project | where: "lang", L %}
+<h2 class="list-h">{{ t.posts_count | replace: "%n", posts.size }}</h2>
 {% include post-list.html posts=posts %}

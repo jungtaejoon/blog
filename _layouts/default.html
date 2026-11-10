@@ -1,10 +1,31 @@
+{%- assign L = page.lang | default: "ko" -%}
+{%- assign t = site.data.i18n[L] -%}
+{%- include alt.html -%}
+{%- if L == "en" %}{% assign home = "/en/" %}{% else %}{% assign home = "/" %}{% endif -%}
 <!doctype html>
-<html lang="ko">
+<html lang="{{ L }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% seo %}
 {% feed_meta %}
+{%- if alt %}
+<link rel="alternate" hreflang="{{ L }}" href="{{ page.url | absolute_url }}">
+<link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url | absolute_url }}">
+{%- if L == "en" %}<link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}">{% else %}<link rel="alternate" hreflang="x-default" href="{{ alt.url | absolute_url }}">{% endif %}
+{%- endif %}
+<script>
+/* 처음 온 사람에게 브라우저 언어에 맞는 판을 보여 줘요. 언어 버튼을 누르면 그 선택을 기억해요. 검색 로봇은 옮기지 않아요. */
+(function () {
+  var here = "{{ L }}", alt = {% if alt %}"{{ alt.url | relative_url }}"{% else %}null{% endif %};
+  if (!alt || /bot|crawl|spider|slurp|lighthouse|preview/i.test(navigator.userAgent)) return;
+  var pref = null;
+  try { pref = localStorage.getItem("blog-lang"); } catch (e) {}
+  var nav = ((navigator.languages && navigator.languages[0]) || navigator.language || "").toLowerCase();
+  var want = pref || (nav.indexOf("ko") === 0 ? "ko" : "en");
+  if (want !== here) location.replace(alt + location.hash);
+})();
+</script>
 <meta name="theme-color" content="#c2562f">
 <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
@@ -12,11 +33,15 @@
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="{{ '/' | relative_url }}">Slop <span>로그</span></a>
+    <a class="brand" href="{{ home | relative_url }}">Slop <span>{{ t.brand_sub }}</span></a>
     <nav class="top">
-      <a href="{{ '/slop/' | relative_url }}">Slop</a>
-      <a href="{{ '/claude-warmup/' | relative_url }}">곁가지</a>
-      <a class="hide-sm" href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      <a href="{{ home | append: 'slop/' | relative_url }}">Slop</a>
+      <a href="{{ home | append: 'claude-warmup/' | relative_url }}">{{ t.nav_side }}</a>
+      {%- if alt %}
+      <a class="lang" href="{{ alt.url | relative_url }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}" data-lang="{{ alt.lang }}">{{ t.other_lang }}</a>
+      {%- else %}
+      <a class="lang" href="{{ '/' | relative_url }}{% if t.other_code == 'en' %}en/{% endif %}" hreflang="{{ t.other_code }}" lang="{{ t.other_code }}" data-lang="{{ t.other_code }}">{{ t.other_lang }}</a>
+      {%- endif %}
     </nav>
   </div>
 </header>
@@ -25,9 +50,14 @@
 </main>
 <footer>
   <div class="wrap">
-    <p>{{ site.description }}</p>
-    <p><a href="https://jungtaejoon.github.io/slop/">Slop 바로가기</a> · <a href="https://github.com/jungtaejoon">GitHub</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+    <p>{{ t.footer }}</p>
+    <p><a href="https://jungtaejoon.github.io/slop/">{{ t.slop_link }}</a> · <a href="https://github.com/jungtaejoon">GitHub</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
   </div>
 </footer>
+<script>
+document.querySelectorAll("a[data-lang]").forEach(function (a) {
+  a.addEventListener("click", function () { try { localStorage.setItem("blog-lang", a.dataset.lang); } catch (e) {} });
+});
+</script>
 </body>
 </html>

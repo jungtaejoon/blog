@@ -1,0 +1,28 @@
+ko:
+  brand_sub: 로그
+  nav_side: 곁가지
+  main_project: 메인 프로젝트
+  side_projects: 곁가지 프로젝트
+  side_sub: 만들다 보니 생긴 도구들
+  go: 바로가기
+  posts_count: "글 %n개"
+  date_long: "%Y년 %-m월 %-d일"
+  footer: AI가 만든 것들 속에서 보석을 캐는 커뮤니티 Slop을 만들며 남기는 기록. 곁가지로 만든 도구 이야기도 함께 써요.
+  slop_link: Slop 바로가기
+  other_lang: English
+  other_code: en
+  read_other: 이 글은 영어로도 있어요
+en:
+  brand_sub: Log
+  nav_side: Side projects
+  main_project: Main project
+  side_projects: Side projects
+  side_sub: Tools that came out of building it
+  go: Visit
+  posts_count: "%n posts"
+  date_long: "%B %-d, %Y"
+  footer: Notes from building Slop, a community for finding the gems in AI-made work. Plus the small tools built along the way.
+  slop_link: Visit Slop
+  other_lang: 한국어
+  other_code: ko
+  read_other: 이 글은 한국어로도 있어요

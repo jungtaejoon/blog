@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
+{%- assign L = page.lang | default: "ko" -%}
+{%- assign t = site.data.i18n[L] -%}
+{%- if L == "en" %}{% assign home = "/en/" %}{% else %}{% assign home = "/" %}{% endif -%}
 {% assign proj = site.projects[page.project] %}
 <article class="post">
-  <p class="kicker">{% if proj %}<a class="tag tag-{{ page.project }}" href="{{ '/' | append: page.project | append: '/' | relative_url }}">{{ proj.name }}</a> · {% endif %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time></p>
+  <p class="kicker">{% if proj %}<a class="tag tag-{{ page.project }}" href="{{ home | append: page.project | append: '/' | relative_url }}">{{ proj.name }}</a> · {% endif %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: t.date_long }}</time></p>
   <h1>{{ page.title }}</h1>
   {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
   <div class="body">
@@ -11,8 +14,8 @@ layout: default
   </div>
   {% if proj %}
   <aside class="project-box">
-    <strong>{{ proj.name }}</strong> <span>{{ proj.tagline }}</span>
-    <a class="btn" href="{{ proj.url }}">{{ proj.name }} 바로가기 →</a>
+    <strong>{{ proj.name }}</strong> <span>{{ proj.tagline[L] }}</span>
+    <a class="btn" href="{{ proj.url[L] }}">{{ proj.name }} {{ t.go }} →</a>
   </aside>
   {% endif %}
 </article>

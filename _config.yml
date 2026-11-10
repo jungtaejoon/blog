@@ -14,12 +14,20 @@ github_username: jungtaejoon
 projects:
   slop:
     name: Slop
-    tagline: 메인 프로젝트 · AI 결과물 판정 커뮤니티
-    url: https://jungtaejoon.github.io/slop/
+    tagline:
+      ko: 메인 프로젝트 · AI 결과물 판정 커뮤니티
+      en: Main project · a community that judges AI-made work
+    url:
+      ko: https://jungtaejoon.github.io/slop/
+      en: https://jungtaejoon.github.io/slop/
   claude-warmup:
     name: claude-warmup
-    tagline: 곁가지 프로젝트 · Claude 5시간 한도 리셋 시간 맞추기
-    url: https://jungtaejoon.github.io/claude-warmup/ko/
+    tagline:
+      ko: 곁가지 프로젝트 · Claude 5시간 한도 리셋 시간 맞추기
+      en: Side project · time your Claude 5-hour limit resets
+    url:
+      ko: https://jungtaejoon.github.io/claude-warmup/ko/
+      en: https://jungtaejoon.github.io/claude-warmup/
 
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
@@ -32,9 +40,16 @@ plugins:
   - jekyll-sitemap
 feed:
   path: feed.xml
+# 언어: 한국어 글은 _posts/, 영어 글은 en/_posts/. 같은 글의 두 언어판은 ref 값을 똑같이 맞춰요.
 defaults:
   - scope: { path: "", type: posts }
-    values: { layout: post }
+    values: { layout: post, lang: ko }
+  - scope: { path: "en", type: posts }
+    values: { layout: post, lang: en, permalink: "/en/:year/:month/:day/:title/" }
+  - scope: { path: "" }
+    values: { lang: ko }
+  - scope: { path: "en" }
+    values: { lang: en }
 exclude:
   - README.md
   - _templates

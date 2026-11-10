@@ -2,6 +2,8 @@
 title: "AI가 만든 거라고 다 슬롭일까? 보석을 가려내는 커뮤니티 Slop을 만들었어요"
 description: AI로 만든 글·그림·웹앱·코드를 올리고, 직접 써 본 사람들이 ▲보석 / ▼슬롭으로 판정하고, 의견을 반영해 다음 버전으로 키우는 곳이에요.
 project: slop
+ref: introducing-slop
+kind: guide
 image: https://jungtaejoon.github.io/slop/og-ko.png
 ---
 
