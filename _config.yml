@@ -1,0 +1,40 @@
+title: Slop 로그
+description: AI가 만든 것들 속에서 보석을 캐는 커뮤니티 Slop을 만들며 남기는 기록. 곁가지로 만든 도구 이야기도 함께 써요.
+url: https://jungtaejoon.github.io
+baseurl: /blog
+lang: ko_KR
+locale: ko_KR
+timezone: Asia/Seoul
+author:
+  name: jungtaejoon
+  url: https://github.com/jungtaejoon
+github_username: jungtaejoon
+
+# 프로젝트 구분: 글 머리말의 project 값으로 나눠요.
+projects:
+  slop:
+    name: Slop
+    tagline: 메인 프로젝트 · AI 결과물 판정 커뮤니티
+    url: https://jungtaejoon.github.io/slop/
+  claude-warmup:
+    name: claude-warmup
+    tagline: 곁가지 프로젝트 · Claude 5시간 한도 리셋 시간 맞추기
+    url: https://jungtaejoon.github.io/claude-warmup/ko/
+
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+feed:
+  path: feed.xml
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+exclude:
+  - README.md
+  - _templates

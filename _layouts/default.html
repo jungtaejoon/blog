@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+{% feed_meta %}
+<meta name="theme-color" content="#c2562f">
+<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">Slop <span>로그</span></a>
+    <nav class="top">
+      <a href="{{ '/slop/' | relative_url }}">Slop</a>
+      <a href="{{ '/claude-warmup/' | relative_url }}">곁가지</a>
+      <a class="hide-sm" href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{{ content }}
+</main>
+<footer>
+  <div class="wrap">
+    <p>{{ site.description }}</p>
+    <p><a href="https://jungtaejoon.github.io/slop/">Slop 바로가기</a> · <a href="https://github.com/jungtaejoon">GitHub</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% assign proj = site.projects[page.project] %}
+<div class="intro">
+  <p class="kicker">{{ proj.tagline }}</p>
+  <h1>{{ proj.name }}</h1>
+  {{ content }}
+  <p><a class="btn primary" href="{{ proj.url }}">{{ proj.name }} 바로가기 →</a></p>
+</div>
+{% assign posts = site.posts | where: "project", page.project %}
+<h2 class="list-h">글 {{ posts | size }}개</h2>
+{% include post-list.html posts=posts %}

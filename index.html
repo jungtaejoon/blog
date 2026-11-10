@@ -1,0 +1,20 @@
+---
+layout: default
+title: Slop 로그
+---
+<div class="intro">
+  <h1>AI가 만든 것들 속에서<br>보석을 캐는 기록</h1>
+  <p class="lead"><a href="https://jungtaejoon.github.io/slop/">Slop</a>은 AI로 만든 글·그림·웹앱·코드를 올리고, 직접 써 본 사람들이 <strong>▲보석</strong> / <strong>▼슬롭</strong>으로 판정하는 커뮤니티예요. 이 블로그에는 Slop을 만들고 키우는 이야기와, 그 곁에서 만든 작은 도구들 이야기를 써요.</p>
+</div>
+
+{% assign main = site.posts | where: "project", "slop" %}
+<section>
+  <h2 class="list-h"><a href="{{ '/slop/' | relative_url }}">Slop</a> <span>메인 프로젝트</span></h2>
+  {% include post-list.html posts=main %}
+</section>
+
+{% assign side = site.posts | where_exp: "p", "p.project != 'slop'" %}
+<section>
+  <h2 class="list-h"><a href="{{ '/claude-warmup/' | relative_url }}">곁가지 프로젝트</a> <span>만들다 보니 생긴 도구들</span></h2>
+  {% include post-list.html posts=side %}
+</section>
