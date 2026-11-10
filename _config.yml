@@ -40,16 +40,20 @@ plugins:
   - jekyll-sitemap
 feed:
   path: feed.xml
+  categories:
+    - en
 # 언어: 한국어 글은 _posts/, 영어 글은 en/_posts/. 같은 글의 두 언어판은 ref 값을 똑같이 맞춰요.
 defaults:
-  - scope: { path: "", type: posts }
-    values: { layout: post, lang: ko }
-  - scope: { path: "en", type: posts }
-    values: { layout: post, lang: en, permalink: "/en/:year/:month/:day/:title/" }
   - scope: { path: "" }
-    values: { lang: ko }
+    values: { lang: ko, locale: ko_KR, image: "https://jungtaejoon.github.io/slop/og-ko.png" }
   - scope: { path: "en" }
-    values: { lang: en }
+    values: { lang: en, locale: en_US, image: "https://jungtaejoon.github.io/slop/og.png" }
+  - scope: { path: "", type: posts }
+    values: { layout: post, lang: ko, locale: ko_KR }
+  - scope: { path: "en", type: posts }
+    values: { layout: post, lang: en, locale: en_US, permalink: "/en/:year/:month/:day/:title/" }
+  - scope: { path: "google8712de7468c202d5.html" }
+    values: { sitemap: false }
 exclude:
   - README.md
   - _templates

@@ -76,3 +76,5 @@ footer p { margin: 4px 0; }
 @media (max-width: 560px) { nav.top a.hide-sm { display: none; } nav.top a { margin-left: 14px; } }
 
 nav.top a.lang { border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
+nav.more { margin-top: 48px; }
+nav.more h2 { font-size: 18px; margin: 0 0 4px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }

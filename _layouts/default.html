@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% seo %}
-{% feed_meta %}
+{% if L == "en" %}<link type="application/atom+xml" rel="alternate" href="{{ '/feed/en.xml' | absolute_url }}" title="Slop Log (English)">{% else %}{% feed_meta %}{% endif %}
 {%- if alt %}
 <link rel="alternate" hreflang="{{ L }}" href="{{ page.url | absolute_url }}">
 <link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url | absolute_url }}">
@@ -51,7 +51,7 @@
 <footer>
   <div class="wrap">
     <p>{{ t.footer }}</p>
-    <p><a href="https://jungtaejoon.github.io/slop/">{{ t.slop_link }}</a> · <a href="https://github.com/jungtaejoon">GitHub</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+    <p><a href="https://jungtaejoon.github.io/slop/">{{ t.slop_link }}</a> · <a href="https://github.com/jungtaejoon">GitHub</a> · <a href="{% if L == "en" %}{{ '/feed/en.xml' | relative_url }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">RSS</a></p>
   </div>
 </footer>
 <script>

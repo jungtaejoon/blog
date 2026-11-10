@@ -12,6 +12,7 @@ ko:
   other_lang: English
   other_code: en
   read_other: 이 글은 영어로도 있어요
+  more_posts: 다른 글
 en:
   brand_sub: Log
   nav_side: Side projects
@@ -26,3 +27,4 @@ en:
   other_lang: 한국어
   other_code: ko
   read_other: 이 글은 한국어로도 있어요
+  more_posts: More posts
