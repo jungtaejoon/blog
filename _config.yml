@@ -38,6 +38,10 @@ projects:
       en: https://www.curseforge.com/wow/addons/forgeflow
 
 permalink: /:year/:month/:day/:title/
+# ForgeFlow 업데이트 노트: 버전마다 한국어·영어 한 쌍(_forgeflow_updates/버전.ko.md, 버전.en.md).
+collections:
+  forgeflow_updates:
+    output: true
 markdown: kramdown
 kramdown:
   input: GFM
@@ -60,6 +64,8 @@ defaults:
     values: { layout: post, lang: ko, locale: ko_KR }
   - scope: { path: "en", type: posts }
     values: { layout: post, lang: en, locale: en_US, permalink: "/en/:year/:month/:day/:title/" }
+  - scope: { path: "", type: forgeflow_updates }
+    values: { layout: update-note, project: forgeflow }
   - scope: { path: "google8712de7468c202d5.html" }
     values: { sitemap: false }
 exclude:

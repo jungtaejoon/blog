@@ -31,6 +31,12 @@ GitHub Pages가 Jekyll로 자동으로 만들어 줘서, 따로 빌드할 필요
 - 날짜를 미래로 쓰면 그날이 되기 전에는 보이지 않아요.
 - 새 곁가지 프로젝트를 추가하려면 `_config.yml`의 `projects`에 항목을 넣고, `claude-warmup/index.md`처럼 목록 페이지를 하나 만들어요.
 
+## ForgeFlow 업데이트 노트
+
+- ForgeFlow 새 버전을 올릴 때마다 `_forgeflow_updates/<버전>.ko.md`와 `<버전>.en.md`를 한 쌍으로 만들어요. `_templates/update-note.md`를 복사하면 돼요.
+- 목록은 `/blog/forgeflow/updates/`(영어 `/blog/en/forgeflow/updates/`)에 자동으로 모여요. 글 목록(`_posts`)과는 따로 관리돼요.
+- 새 화면·새 기능처럼 큰 업데이트는 `_posts/`에 설명 글도 쓰고, 노트 머리말 `post:`에 그 글 주소를 넣어요. 작은 수정·데이터 갱신만 있으면 노트만 써요.
+
 ## 내 컴퓨터에서 미리 보기 (선택)
 
 ```bash

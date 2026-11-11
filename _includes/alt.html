@@ -1,5 +1,5 @@
 {%- assign alt = nil -%}
 {%- if page.ref -%}
-  {%- if page.collection == "posts" -%}{%- assign pool = site.posts -%}{%- else -%}{%- assign pool = site.pages -%}{%- endif -%}
+  {%- if page.collection == "posts" -%}{%- assign pool = site.posts -%}{%- elsif page.collection -%}{%- assign pool = site[page.collection] -%}{%- else -%}{%- assign pool = site.pages -%}{%- endif -%}
   {%- for p in pool -%}{%- if p.ref == page.ref and p.lang != page.lang -%}{%- assign alt = p -%}{%- break -%}{%- endif -%}{%- endfor -%}
 {%- endif -%}
