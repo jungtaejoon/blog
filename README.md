@@ -2,7 +2,7 @@
 
 https://jungtaejoon.github.io/blog/
 
-AI 결과물 판정 커뮤니티 [Slop](https://jungtaejoon.github.io/slop/)을 만들며 쓰는 블로그예요. 곁가지 프로젝트([claude-warmup](https://github.com/jungtaejoon/claude-warmup)) 글도 함께 있어요.
+AI 결과물 판정 커뮤니티 [Slop](https://slop.ai.kr/)을 만들며 쓰는 블로그예요. 곁가지 프로젝트([claude-warmup](https://github.com/jungtaejoon/claude-warmup)) 글도 함께 있어요.
 GitHub Pages가 Jekyll로 자동으로 만들어 줘서, 따로 빌드할 필요가 없어요.
 
 ## 두 언어

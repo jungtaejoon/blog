@@ -6,7 +6,7 @@ ref: claude-5-hour-limit-reset
 image: https://jungtaejoon.github.io/claude-warmup/og.png
 ---
 
-While building [Slop](https://jungtaejoon.github.io/slop/) with Claude Code, I saw the same thing almost every day. A productive morning, then around noon: "limit reached, resets at 2 PM." My own first message at 9 had started a fresh 5-hour clock, so I waited two hours, right when I was most in the flow. So I looked into how the reset is timed and built a small tool.
+While building [Slop](https://slop.ai.kr/) with Claude Code, I saw the same thing almost every day. A productive morning, then around noon: "limit reached, resets at 2 PM." My own first message at 9 had started a fresh 5-hour clock, so I waited two hours, right when I was most in the flow. So I looked into how the reset is timed and built a small tool.
 
 ## The reset is 5 hours after your first message
 

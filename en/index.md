@@ -5,4 +5,4 @@ description: Notes from building Slop, a community for finding the gems in AI-ma
 ref: home
 ---
 <h1>Digging for gems<br>in AI-made stuff</h1>
-<p class="lead"><a href="https://jungtaejoon.github.io/slop/">Slop</a> is a community where people post AI-made writing, images, web apps and code, and everyone who tries them judges each one <strong>▲gem</strong> or <strong>▼slop</strong>. This blog covers building and growing Slop, AI news and trends, and the small tools made along the way.</p>
+<p class="lead"><a href="https://slop.ai.kr/">Slop</a> is a community where people post AI-made writing, images, web apps and code, and everyone who tries them judges each one <strong>▲gem</strong> or <strong>▼slop</strong>. This blog covers building and growing Slop, AI news and trends, and the small tools made along the way.</p>

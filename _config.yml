@@ -18,8 +18,8 @@ projects:
       ko: 메인 프로젝트 · AI 결과물 판정 커뮤니티
       en: Main project · a community that judges AI-made work
     url:
-      ko: https://jungtaejoon.github.io/slop/
-      en: https://jungtaejoon.github.io/slop/
+      ko: https://slop.ai.kr/
+      en: https://slop.ai.kr/
   claude-warmup:
     name: claude-warmup
     tagline:
@@ -45,9 +45,9 @@ feed:
 # 언어: 한국어 글은 _posts/, 영어 글은 en/_posts/. 같은 글의 두 언어판은 ref 값을 똑같이 맞춰요.
 defaults:
   - scope: { path: "" }
-    values: { lang: ko, locale: ko_KR, image: "https://jungtaejoon.github.io/slop/og-ko.png" }
+    values: { lang: ko, locale: ko_KR, image: "https://slop.ai.kr/og-ko.png" }
   - scope: { path: "en" }
-    values: { lang: en, locale: en_US, image: "https://jungtaejoon.github.io/slop/og.png" }
+    values: { lang: en, locale: en_US, image: "https://slop.ai.kr/og.png" }
   - scope: { path: "", type: posts }
     values: { layout: post, lang: ko, locale: ko_KR }
   - scope: { path: "en", type: posts }

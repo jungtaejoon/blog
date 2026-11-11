@@ -4,12 +4,12 @@ description: AI로 만든 글·그림·웹앱·코드를 올리고, 직접 써 �
 project: slop
 ref: introducing-slop
 kind: guide
-image: https://jungtaejoon.github.io/slop/og-ko.png
+image: https://slop.ai.kr/og-ko.png
 ---
 
 요즘은 누구나 AI로 글을 쓰고, 그림을 그리고, 작은 웹앱이나 게임까지 만들어요. 그만큼 "AI가 만든 거잖아" 한마디로 넘겨지는 것도 많아졌죠. 이런 걸 흔히 **슬롭(slop)**이라고 불러요.
 
-그런데 그 더미 속에는 진짜 쓸 만하거나 재미있는 것도 섞여 있어요. 문제는 그걸 골라낼 곳이 없다는 거예요. 그래서 **[Slop](https://jungtaejoon.github.io/slop/)**을 만들었어요.
+그런데 그 더미 속에는 진짜 쓸 만하거나 재미있는 것도 섞여 있어요. 문제는 그걸 골라낼 곳이 없다는 거예요. 그래서 **[Slop](https://slop.ai.kr/)**을 만들었어요.
 
 ## Slop에서는 이렇게 해요
 
@@ -26,10 +26,10 @@ AI 그림, AI 음악, 프롬프트, 작은 웹앱처럼 주제별 커뮤니티�
 
 ## 지금 바로 해 볼 수 있는 것
 
-- **판정 한 번 해 보기:** [판정하기 화면](https://jungtaejoon.github.io/slop/#/judge)을 열면 카드 한 장이 바로 나와요. ▲ 아니면 ▼, 그것만 누르면 돼요.
-- **이번 주 보석 보기:** [이번 주 보석](https://jungtaejoon.github.io/slop/best/) 페이지는 3시간마다 자동으로 갱신돼요.
+- **판정 한 번 해 보기:** [판정하기 화면](https://slop.ai.kr/#/judge)을 열면 카드 한 장이 바로 나와요. ▲ 아니면 ▼, 그것만 누르면 돼요.
+- **이번 주 보석 보기:** [이번 주 보석](https://slop.ai.kr/best/) 페이지는 3시간마다 자동으로 갱신돼요.
 - **앱처럼 쓰기:** 휴대폰 브라우저에서 "홈 화면에 추가"를 누르면 앱 아이콘으로 설치돼요.
-- **피드 구독:** [RSS](https://jungtaejoon.github.io/slop/rss.xml)로 새 글을 받아 볼 수 있어요.
+- **피드 구독:** [RSS](https://slop.ai.kr/rss.xml)로 새 글을 받아 볼 수 있어요.
 
 ## 어떻게 만들었나요
 
@@ -37,4 +37,4 @@ Slop은 Claude Code와 함께 만들었어요. 화면은 Vite로, 데이터와 �
 
 아직 초기라서 판정 하나, 댓글 하나가 정말 큰 힘이 돼요. AI로 만든 게 있다면 하나 올려서 판정을 받아 보세요.
 
-**[Slop 둘러보기 →](https://jungtaejoon.github.io/slop/)**
+**[Slop 둘러보기 →](https://slop.ai.kr/)**

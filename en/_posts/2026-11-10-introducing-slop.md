@@ -4,12 +4,12 @@ description: Post AI-made writing, images, web apps and code. People who try the
 project: slop
 ref: introducing-slop
 kind: guide
-image: https://jungtaejoon.github.io/slop/og.png
+image: https://slop.ai.kr/og.png
 ---
 
 Anyone can now write, draw, and even ship small web apps and games with AI. That also means a lot of it gets waved off with "it's just AI-made." People call that **slop**.
 
-But mixed into the pile are things that are genuinely useful or fun. The problem is there is no good place to sort them out. So I built **[Slop](https://jungtaejoon.github.io/slop/)**.
+But mixed into the pile are things that are genuinely useful or fun. The problem is there is no good place to sort them out. So I built **[Slop](https://slop.ai.kr/)**.
 
 ## How Slop works
 
@@ -26,10 +26,10 @@ There are communities for AI art, AI music, prompts, small web apps and more. Fo
 
 ## Things to try right now
 
-- **Judge one post:** open the [judge screen](https://jungtaejoon.github.io/slop/#/judge) and a card shows up. Press ▲ or ▼, that's it.
-- **See this week's gems:** the [weekly gems](https://jungtaejoon.github.io/slop/best/) page refreshes every three hours.
+- **Judge one post:** open the [judge screen](https://slop.ai.kr/#/judge) and a card shows up. Press ▲ or ▼, that's it.
+- **See this week's gems:** the [weekly gems](https://slop.ai.kr/best/) page refreshes every three hours.
 - **Use it like an app:** on your phone, choose "Add to Home Screen" in the browser to install it.
-- **Subscribe:** follow new posts with [RSS](https://jungtaejoon.github.io/slop/rss.xml).
+- **Subscribe:** follow new posts with [RSS](https://slop.ai.kr/rss.xml).
 
 ## How I built it
 
@@ -37,4 +37,4 @@ I built Slop together with Claude Code. The front end uses Vite, and data and si
 
 It is still early, so every vote and comment really helps. If you have made something with AI, post it and see how it is judged.
 
-**[Explore Slop →](https://jungtaejoon.github.io/slop/)**
+**[Explore Slop →](https://slop.ai.kr/)**
