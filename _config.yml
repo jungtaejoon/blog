@@ -36,6 +36,14 @@ projects:
     url:
       ko: https://www.curseforge.com/wow/addons/forgeflow
       en: https://www.curseforge.com/wow/addons/forgeflow
+  dungeonrush:
+    name: Dungeon Rush
+    tagline:
+      ko: 곁가지 프로젝트 · WoW Forever 던전 서바이버 미니 게임 애드온
+      en: Side project · a dungeon survivors minigame addon for WoW Forever
+    url:
+      ko: https://www.curseforge.com/wow/addons/dungeon-rush
+      en: https://www.curseforge.com/wow/addons/dungeon-rush
 
 permalink: /:year/:month/:day/:title/
 # ForgeFlow 업데이트 노트: 버전마다 한국어·영어 한 쌍(_forgeflow_updates/버전.ko.md, 버전.en.md).
