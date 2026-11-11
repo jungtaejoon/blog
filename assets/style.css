@@ -47,6 +47,7 @@ ul.posts li { padding: 16px 0; border-bottom: 1px solid var(--line); }
 .tag { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 1px 8px; border-radius: 999px; text-decoration: none; line-height: 1.6; }
 .tag-slop { background: var(--accent-soft); color: var(--accent); }
 .tag-claude-warmup { background: var(--side-soft); color: var(--side); }
+.tag-forgeflow { background: var(--side-soft); color: var(--side); }
 
 .btn { display: inline-block; padding: 10px 16px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 15px; border: 1px solid var(--line); color: var(--text); background: var(--surface); }
 .btn.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }

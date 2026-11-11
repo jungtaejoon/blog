@@ -28,6 +28,14 @@ projects:
     url:
       ko: https://jungtaejoon.github.io/claude-warmup/ko/
       en: https://jungtaejoon.github.io/claude-warmup/
+  forgeflow:
+    name: ForgeFlow
+    tagline:
+      ko: 곁가지 프로젝트 · WoW Forever 제작·경매 애드온
+      en: Side project · a crafting and auction addon for WoW Forever
+    url:
+      ko: https://www.curseforge.com/wow/addons/forgeflow
+      en: https://www.curseforge.com/wow/addons/forgeflow
 
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
