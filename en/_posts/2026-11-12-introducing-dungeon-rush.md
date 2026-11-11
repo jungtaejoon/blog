@@ -28,3 +28,7 @@ Turn on **game progress backup** in the ForgeFlow Windows Companion 0.12.0 and y
 ## Safe to play
 
 Entering combat pauses the game at once, closes the window and gives your keyboard back. It makes no protected calls and no network traffic.
+
+## Judge it on Slop
+
+[Dungeon Rush is on Slop too](https://slop.ai.kr/#/p/4a8a9e29-2f4d-43ef-8015-f11a58729af7), with more in-game screenshots. Try it and vote **▲ gem** or **▼ slop**. Comments about hard bosses, slow stretches or class balance go straight into the next version.

@@ -52,3 +52,5 @@ WoW Forever에서 전문기술을 올리다 보면 늘 같은 고민을 해요. 
 - 원하면 Windows용 Companion으로 [ForgeFlow 웹](https://forgeflow.co.kr/)과 연결해 개인 장부를 백업하고 웹에서 제작 도감을 볼 수 있어요. 연결하지 않아도 애드온 기능은 그대로 쓸 수 있어요.
 
 이 글에 나온 보급품 상자 화면과 새 필터는 0.9.1에 들어 있고, 지금 CurseForge 심사 중이에요. 써 보고 불편한 점이나 원하는 기능이 있으면 CurseForge 댓글이나 [ForgeFlow 지원 페이지](https://forgeflow.co.kr/support)로 알려 주세요. Slop에서 하듯이, 의견을 받아 다음 버전으로 키워 갈게요.
+
+Slop에도 [ForgeFlow 애드온](https://slop.ai.kr/#/p/3ef64616-47bf-4cba-93af-143a36fb5be1)과 [Windows Companion](https://slop.ai.kr/#/p/9f9aae21-517d-4361-a374-2bed7d93740e)을 올렸어요. 써 보고 보석인지 슬롭인지 판정해 주세요.

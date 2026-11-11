@@ -52,3 +52,5 @@ Every day the recipe list is compared with the newest Forever client build and t
 - If you like, the Windows Companion connects it to the [ForgeFlow website](https://forgeflow.co.kr/) to back up your private ledger and browse the crafting catalog on the web. The addon works fully without it.
 
 The Waylaid Supplies page and the new filters in this post are in version 0.9.1, which is under review on CurseForge right now. If something bothers you or you want a feature, tell me in the CurseForge comments or on the [ForgeFlow support page](https://forgeflow.co.kr/support). Just like on Slop, I'll take the feedback and grow it into the next version.
+
+ForgeFlow is on Slop too: [the addon](https://slop.ai.kr/#/p/3ef64616-47bf-4cba-93af-143a36fb5be1) and [the Windows Companion](https://slop.ai.kr/#/p/9f9aae21-517d-4361-a374-2bed7d93740e). Try them and judge whether they are gems or slop.
