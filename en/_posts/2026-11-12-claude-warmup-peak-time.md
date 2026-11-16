@@ -32,7 +32,7 @@ $ claude-warmup config peak 11:30 weekdays
     5) 07:30–11:30  (right before the peak)
   Number (Enter to decide later): 4
 ✓ Empty hours (no window): 02:30–06:30
-  Pings now line up at 06:30, 11:30, 16:30, 21:30, so a window resets right at weekdays 11:30.
+  Windows keep chaining all day. From 01:30 to 06:30 no new one starts (it would run past the gap), and at 06:30 one starts that resets right at weekdays 11:30.
 ```
 
 I left the early morning empty, while I'm asleep. On weekdays windows now run 06:30 → 11:30 (reset) → 16:30 → 21:30 → 02:30, and only 02:30–06:30 is empty.
@@ -47,9 +47,9 @@ I left the early morning empty, while I'm asleep. On weekdays windows now run 06
 ## How it behaves
 
 - **The peak applies only once you've chosen the empty hours.** It won't pick them for you.
-- **Off an aligned time, it waits.** A window opened at the wrong moment would throw the peak off. While it waits it doesn't call Claude at all, so it costs no tokens.
-- **A window that's already off can't be fixed.** If your own message opened a window at another time, it can't be moved. When it ends, claude-warmup lines up again at the next aligned time.
-- **With days set, the time in between works as before.** Aligning starts within a day of each peak. When the next peak is far away, like over a weekend, a new window starts as soon as the last one ends.
+- **Windows keep chaining all day.** The only rest is the 5 hours before the gap ends (here 01:30–06:30), since a window started then would run past 06:30. While it rests it doesn't call Claude at all, so it costs no tokens.
+- **If the timing gets thrown off, it lines up again by itself.** Even if my own late-night use opens a window at another time, windows keep chaining and line up again at the next gap's end. For example: my window until 14:00 → 14:00 → 19:00 → 00:00 (until 05:00) → rest → 06:30 → reset at 11:30.
+- **No rest before a day without a peak.** With weekday peaks, Friday and Saturday nights just keep chaining.
 - **Change the peak** and the choices change too. If the empty hours you chose no longer fit, it asks again.
 
 You can see it all in the status screen:
@@ -57,10 +57,12 @@ You can see it all in the status screen:
 ```
 Auto warm-up
   Schedule    06:00–23:00 · every day
-  Peak time   weekdays 11:30 · pings lined up at 06:30, 11:30, 16:30, 21:30
+  Peak time   weekdays 11:30 · windows chain all day; none starts 01:30–06:30, then one starts at 06:30 to end at the peak
   Gap         02:30–06:30
-  Next ping   ~16:25, lined up so a window resets at tomorrow 11:30
+  Next ping   ~14:00, right after the current window resets
 ```
+
+> **Fixed on 11/16 (0.3.1):** the first version pinged only at exact times and waited in between. So when my own late-night window ran past an aligned time, there was no window for hours, and a bug left the weekend from Friday afternoon to Sunday empty. Now it chains as above and rests only right before the gap.
 
 ## How to update
 
@@ -72,4 +74,4 @@ claude-warmup config peak 11:30 weekdays
 
 Run `install` again so the background service switches to the new version. If you already use a peak time, choose the empty hours with `claude-warmup config gap`. If you set it up on a server with `scripts/server-setup.sh`, add `--prefix ~/.local` to the npm command so it replaces the same copy. I forgot that at first, and my server kept running the old version.
 
-What changed: [0.3 release notes](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.3.0) · [0.2 release notes](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.2.0)
+What changed: [0.3.1 release notes](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.3.1) · [0.3 release notes](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.3.0) · [0.2 release notes](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.2.0)
