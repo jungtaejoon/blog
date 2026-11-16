@@ -36,7 +36,7 @@
     <a class="brand" href="{{ home | relative_url }}">Slop <span>{{ t.brand_sub }}</span></a>
     <nav class="top">
       <a href="{{ home | append: 'slop/' | relative_url }}">Slop</a>
-      <a href="{{ home | append: 'claude-warmup/' | relative_url }}">{{ t.nav_side }}</a>
+      <a href="{{ home | append: 'side/' | relative_url }}">{{ t.nav_side }}</a>
       {%- if alt %}
       <a class="lang" href="{{ alt.url | relative_url }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}" data-lang="{{ alt.lang }}">{{ t.other_lang }}</a>
       {%- else %}

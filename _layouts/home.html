@@ -15,6 +15,6 @@ layout: default
 </section>
 {% assign side = mine | where_exp: "p", "p.project != 'slop'" %}
 <section>
-  <h2 class="list-h"><a href="{{ home | append: 'claude-warmup/' | relative_url }}">{{ t.side_projects }}</a> <span>{{ t.side_sub }}</span></h2>
+  <h2 class="list-h"><a href="{{ home | append: 'side/' | relative_url }}">{{ t.side_projects }}</a> <span>{{ t.side_sub }}</span></h2>
   {% include post-list.html posts=side %}
 </section>
