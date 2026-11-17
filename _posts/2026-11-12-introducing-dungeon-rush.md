@@ -7,7 +7,7 @@ kind: guide
 image: https://jungtaejoon.github.io/blog/assets/img/dungeonrush/logo.png
 ---
 
-경매장에서 시세를 기다리거나 파티를 구할 때, 잠깐 할 만한 게 있으면 좋겠다고 생각했어요. 그래서 WoW Forever 안에서 바로 하는 미니 게임 애드온 **[던전 러시(Dungeon Rush)](https://www.curseforge.com/wow/addons/dungeon-rush)**를 만들었어요. [ForgeFlow](/blog/2026/11/11/introducing-forgeflow/)처럼 Claude Code와 함께 만들고, 게임에서 직접 돌려 보며 다듬었어요. 지금은 CurseForge 심사 중이에요.
+경매장에서 시세를 기다리거나 파티를 구할 때, 잠깐 할 만한 게 있으면 좋겠다고 생각했어요. 그래서 WoW Forever 안에서 바로 하는 미니 게임 애드온 **[던전 러시(Dungeon Rush)](https://www.curseforge.com/wow/addons/dungeon-rush)**를 만들었어요. [ForgeFlow](/blog/2026/11/11/introducing-forgeflow/)처럼 Claude Code와 함께 만들고, 게임에서 직접 돌려 보며 다듬었어요.
 
 ## 이렇게 놀아요
 

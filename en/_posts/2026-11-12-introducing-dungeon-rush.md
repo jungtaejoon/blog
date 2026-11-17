@@ -7,7 +7,7 @@ kind: guide
 image: https://jungtaejoon.github.io/blog/assets/img/dungeonrush/logo.png
 ---
 
-Waiting on auction prices or a group, I kept wishing for something quick to play without leaving the game. So I made **[Dungeon Rush](https://www.curseforge.com/wow/addons/dungeon-rush)**, a minigame addon that runs inside WoW Forever. Like [ForgeFlow](/blog/en/2026/11/11/introducing-forgeflow/), I built it with Claude Code and tuned it by playing it in game. It is under review on CurseForge right now.
+Waiting on auction prices or a group, I kept wishing for something quick to play without leaving the game. So I made **[Dungeon Rush](https://www.curseforge.com/wow/addons/dungeon-rush)**, a minigame addon that runs inside WoW Forever. Like [ForgeFlow](/blog/en/2026/11/11/introducing-forgeflow/), I built it with Claude Code and tuned it by playing it in game.
 
 ## How it plays
 

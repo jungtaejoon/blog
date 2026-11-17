@@ -74,7 +74,7 @@ image: https://jungtaejoon.github.io/blog/assets/img/forgeflow/094-auction-grade
 ## 받기
 
 - 자세한 변경 목록은 [0.9.4 업데이트 노트](/blog/forgeflow/updates/0.9.4/)에 있어요.
-- 애드온은 [CurseForge](https://www.curseforge.com/wow/addons/forgeflow)에서 받을 수 있어요(심사 후 공개).
+- 애드온은 [CurseForge](https://www.curseforge.com/wow/addons/forgeflow)에서 받을 수 있어요.
 - Windows 앱은 [ForgeFlow 웹](https://forgeflow.co.kr/)에서 받을 수 있어요. 애드온 0.9.4가 들어 있는 0.12.2예요.
 
 써 보고 의견이 있으면 CurseForge 댓글이나 [지원 페이지](https://forgeflow.co.kr/support)로 알려 주세요. [Slop](https://slop.ai.kr/#/p/3ef64616-47bf-4cba-93af-143a36fb5be1)에도 새 버전을 올렸어요.

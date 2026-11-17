@@ -69,7 +69,7 @@ The cheapest skill route from [0.9.3](/blog/en/2026/11/16/forgeflow-skill-route/
 ## Get it
 
 - The full list is in the [0.9.5 update note](/blog/en/forgeflow/updates/0.9.5/).
-- The addon is on [CurseForge](https://www.curseforge.com/wow/addons/forgeflow) (public after review).
+- The addon is on [CurseForge](https://www.curseforge.com/wow/addons/forgeflow).
 - The Windows app 0.12.3 with addon 0.9.5 is on [ForgeFlow web](https://forgeflow.co.kr/).
 
 Feedback is welcome in the CurseForge comments or on the [support page](https://forgeflow.co.kr/support). The new version is also on [Slop](https://slop.ai.kr/#/p/3ef64616-47bf-4cba-93af-143a36fb5be1).

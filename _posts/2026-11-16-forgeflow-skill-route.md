@@ -40,4 +40,4 @@ image: https://jungtaejoon.github.io/blog/assets/img/forgeflow/093-skill-route-p
 - 툴팁에 노랑·초록·회색 숙련도와 지금의 상승 확률, 숙련도 상승 필터를 주황·노랑·초록별로.
 - 가방 보유량 차감이 일부 재료(포에버 아이템 링크)에서 0개로 잡히던 문제를 고쳤어요.
 
-자세한 변경 목록은 [0.9.3 업데이트 노트](/blog/forgeflow/updates/0.9.3/)에 있어요. [CurseForge](https://www.curseforge.com/wow/addons/forgeflow)에서 받을 수 있고(심사 후 공개), Windows 앱은 [ForgeFlow 웹](https://forgeflow.co.kr/)에서 0.12.1로 받을 수 있어요. 써 보고 의견이 있으면 CurseForge 댓글이나 [지원 페이지](https://forgeflow.co.kr/support)로 알려 주세요. [Slop](https://slop.ai.kr/#/p/3ef64616-47bf-4cba-93af-143a36fb5be1)에도 새 버전을 올렸으니 보석인지 슬롭인지 판정해 주세요.
+자세한 변경 목록은 [0.9.3 업데이트 노트](/blog/forgeflow/updates/0.9.3/)에 있어요. [CurseForge](https://www.curseforge.com/wow/addons/forgeflow)에서 받을 수 있고, Windows 앱은 [ForgeFlow 웹](https://forgeflow.co.kr/)에서 0.12.1로 받을 수 있어요. 써 보고 의견이 있으면 CurseForge 댓글이나 [지원 페이지](https://forgeflow.co.kr/support)로 알려 주세요. [Slop](https://slop.ai.kr/#/p/3ef64616-47bf-4cba-93af-143a36fb5be1)에도 새 버전을 올렸으니 보석인지 슬롭인지 판정해 주세요.
