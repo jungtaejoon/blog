@@ -44,6 +44,14 @@ projects:
     url:
       ko: https://www.curseforge.com/wow/addons/dungeon-rush
       en: https://www.curseforge.com/wow/addons/dungeon-rush
+  alltests:
+    name: alltests
+    tagline:
+      ko: 곁가지 프로젝트 · PSAT 기출 모의고사와 AI 해설
+      en: Side project · PSAT past-exam mock tests with AI explanations
+    url:
+      ko: https://alltests.ai.kr/
+      en: https://alltests.ai.kr/
 
 permalink: /:year/:month/:day/:title/
 # ForgeFlow 업데이트 노트: 버전마다 한국어·영어 한 쌍(_forgeflow_updates/버전.ko.md, 버전.en.md).
