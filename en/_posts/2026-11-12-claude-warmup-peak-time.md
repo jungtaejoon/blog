@@ -62,6 +62,17 @@ Auto warm-up
   Next ping   ~14:00, right after the current window resets
 ```
 
+## What it can't do
+
+Some limits I ran into while using it. claude-warmup can only open a window when none is open. It can't stop, move or end one.
+
+- **The window belongs to your account.** A message from claude.ai, the desktop or mobile app, Claude Code, or another computer starts a window if none is open, and it runs its full 5 hours.
+- **Background work counts too.** In my case an analysis job I left running overnight finished at 05:46, Claude Code woke up to report the result, and that opened a window. That day the reset came at 10:40 instead of 11:30.
+- **It still lines up again by itself.** When that window ends, windows keep chaining and line up again at the next gap's end. The next day the reset was back at 11:30.
+- **If the peak really matters,** keep Claude idle in the 5 hours before your gap ends: tell sessions running long jobs to wait instead of replying when they finish, run long jobs outside Claude, or pick a gap when nothing runs.
+
+The full list is in [the README's Limits section](https://github.com/jungtaejoon/claude-warmup#limits-what-it-cant-control).
+
 > **Fixed on 11/16 (0.3.1):** the first version pinged only at exact times and waited in between. So when my own late-night window ran past an aligned time, there was no window for hours, and a bug left the weekend from Friday afternoon to Sunday empty. Now it chains as above and rests only right before the gap.
 
 ## How to update
