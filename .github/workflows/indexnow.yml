@@ -1,0 +1,31 @@
+# GitHub Pages 빌드가 끝나면 새로 생기거나 바뀐 글 주소를 IndexNow(Bing·네이버 등)에 알려요.
+name: IndexNow
+on:
+  page_build:
+  workflow_dispatch:
+jobs:
+  ping:
+    if: github.event_name == 'workflow_dispatch' || github.event.build.status == 'built'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Send changed URLs
+        run: |
+          KEY=$(ls | grep -E '^[0-9a-f]{32}\.txt$' | head -1 | cut -c1-32)
+          BASE=https://jungtaejoon.github.io/blog
+          sleep 30
+          curl -sf "$BASE/sitemap.xml" | grep -o '<loc>[^<]*' | sed 's/<loc>//' > urls.txt
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            # 이번 커밋에서 바뀐 글의 이름(slug)과 맞는 주소, 그리고 첫 화면만 보내요.
+            git diff --name-only HEAD~1 HEAD -- '_posts' 'en/_posts' '_forgeflow_updates' | sed -E 's#.*/##; s#^[0-9]{4}-[0-9]{2}-[0-9]{2}-##; s#\.(ko|en)?\.?md$##' > slugs.txt
+            { echo "$BASE/"; echo "$BASE/en/"; [ -s slugs.txt ] && grep -F -f slugs.txt urls.txt; } | sort -u > send.txt
+          else
+            cp urls.txt send.txt
+          fi
+          LIST=$(jq -R . send.txt | jq -s -c .)
+          echo "보낼 주소 $(wc -l < send.txt)개"
+          curl -s -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"jungtaejoon.github.io\",\"key\":\"$KEY\",\"keyLocation\":\"$BASE/$KEY.txt\",\"urlList\":$LIST}"

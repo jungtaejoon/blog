@@ -9,6 +9,12 @@ author:
   name: jungtaejoon
   url: https://github.com/jungtaejoon
 github_username: jungtaejoon
+# jekyll-seo-tag이 검색엔진용 구조화 데이터(sameAs)에 넣어요.
+social:
+  name: jungtaejoon
+  links:
+    - https://github.com/jungtaejoon
+    - https://slop.ai.kr/
 
 # 프로젝트 구분: 글 머리말의 project 값으로 나눠요.
 projects:
