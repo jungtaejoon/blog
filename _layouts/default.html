@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% seo %}
-{% if L == "en" %}<link type="application/atom+xml" rel="alternate" href="{{ '/feed/en.xml' | absolute_url }}" title="Slop Log (English)">{% else %}{% feed_meta %}{% endif %}
+{% if L == "en" %}<link type="application/atom+xml" rel="alternate" href="{{ '/feed/en.xml' | absolute_url }}" title="Slop Log (English)">{% else %}{% feed_meta %}{% endif %}{% if L != "en" %}<link rel="alternate" type="application/rss+xml" title="Slop Log (RSS)" href="{{ '/rss.xml' | absolute_url }}">{% endif %}
 {%- if alt %}
 <link rel="alternate" hreflang="{{ L }}" href="{{ page.url | absolute_url }}">
 <link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.url | absolute_url }}">
