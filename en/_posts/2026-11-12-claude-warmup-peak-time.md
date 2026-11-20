@@ -86,3 +86,5 @@ claude-warmup config peak 11:30 weekdays
 Run `install` again so the background service switches to the new version. If you already use a peak time, choose the empty hours with `claude-warmup config gap`. If you set it up on a server with `scripts/server-setup.sh`, add `--prefix ~/.local` to the npm command so it replaces the same copy. I forgot that at first, and my server kept running the old version.
 
 What changed: [0.3.1 release notes](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.3.1) · [0.3 release notes](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.3.0) · [0.2 release notes](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.2.0)
+
+> **Update (2026-11-20): no computer needed.** If a terminal install is hard or you cannot keep a computer on, GitHub can wake Claude for you at set times. The [GitHub Actions setup helper](https://jungtaejoon.github.io/claude-warmup/github-actions/?utm_source=slop-log) turns your peak time into the file and direct links you need (free). Runs can start a few minutes late, so it is less precise than the local tool.

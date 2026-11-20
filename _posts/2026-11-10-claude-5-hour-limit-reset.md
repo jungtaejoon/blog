@@ -44,3 +44,5 @@ claude-warmup config hours 06:00-23:00
 저는 Oracle Cloud 무료 서버에 올려 두고 써요. 맥을 꺼 둬도 아침 6시부터 밤까지 창이 끊김 없이 이어져서, 언제 앉아도 시계가 이미 돌고 있어요.
 
 더 자세한 원리와 확인 방법은 [Claude 사용량 한도 리셋 가이드](https://jungtaejoon.github.io/claude-warmup/ko/claude-usage-limit-reset/)에 정리해 뒀어요. 코드는 [GitHub](https://github.com/jungtaejoon/claude-warmup)에 있어요.
+
+> **추가 (2026-11-20): 컴퓨터 없이 쓰기.** 터미널 설치가 어렵거나 컴퓨터를 켜 둘 수 없다면, GitHub가 정해진 시각에 대신 깨워 주게 할 수 있어요. [GitHub Actions 설치 도우미](https://jungtaejoon.github.io/claude-warmup/ko/github-actions/?utm_source=slop-log)에서 피크 시각만 고르면 필요한 파일과 바로 가는 링크를 만들어 줘요(무료). 몇 분 늦을 수 있어 내 컴퓨터용보다는 덜 정확해요.

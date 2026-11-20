@@ -86,3 +86,5 @@ claude-warmup config peak 11:30 weekdays
 `install`을 다시 실행해야 백그라운드 서비스가 새 버전으로 바뀌어요. 이미 피크를 쓰고 있었다면 `claude-warmup config gap`으로 빈 시간을 골라 주세요. `scripts/server-setup.sh`로 서버에 설치했다면 npm 명령에 `--prefix ~/.local`을 붙여야 같은 자리의 프로그램이 바뀌어요. 저도 처음에 이걸 빼먹어서 서버에서 옛 버전이 그대로 돌고 있었어요.
 
 변경 내용: [0.3.1 릴리스 노트](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.3.1) · [0.3 릴리스 노트](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.3.0) · [0.2 릴리스 노트](https://github.com/jungtaejoon/claude-warmup/releases/tag/v0.2.0)
+
+> **추가 (2026-11-20): 컴퓨터 없이 쓰기.** 터미널 설치가 어렵거나 컴퓨터를 켜 둘 수 없다면, GitHub가 정해진 시각에 대신 깨워 주게 할 수 있어요. [GitHub Actions 설치 도우미](https://jungtaejoon.github.io/claude-warmup/ko/github-actions/?utm_source=slop-log)에서 피크 시각만 고르면 필요한 파일과 바로 가는 링크를 만들어 줘요(무료). 몇 분 늦을 수 있어 내 컴퓨터용보다는 덜 정확해요.

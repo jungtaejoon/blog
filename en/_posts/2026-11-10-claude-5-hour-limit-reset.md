@@ -44,3 +44,5 @@ claude-warmup config hours 06:00-23:00
 I run it on a free Oracle Cloud server. Even with my Mac off, windows run back to back from 6 in the morning until night, so the clock is already running whenever I sit down.
 
 The details are in the [Claude usage limit reset guide](https://jungtaejoon.github.io/claude-warmup/claude-usage-limit-reset/). The code is on [GitHub](https://github.com/jungtaejoon/claude-warmup).
+
+> **Update (2026-11-20): no computer needed.** If a terminal install is hard or you cannot keep a computer on, GitHub can wake Claude for you at set times. The [GitHub Actions setup helper](https://jungtaejoon.github.io/claude-warmup/github-actions/?utm_source=slop-log) turns your peak time into the file and direct links you need (free). Runs can start a few minutes late, so it is less precise than the local tool.
