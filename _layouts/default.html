@@ -59,5 +59,6 @@ document.querySelectorAll("a[data-lang]").forEach(function (a) {
   a.addEventListener("click", function () { try { localStorage.setItem("blog-lang", a.dataset.lang); } catch (e) {} });
 });
 </script>
+{% include track.html %}
 </body>
 </html>
