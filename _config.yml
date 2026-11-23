@@ -58,6 +58,14 @@ projects:
     url:
       ko: https://alltests.ai.kr/
       en: https://alltests.ai.kr/
+  triad:
+    name: Triad
+    tagline:
+      ko: 곁가지 프로젝트 · AI가 게임 마스터를 맡는 TRPG
+      en: Side project · a tabletop RPG run by an AI game master
+    url:
+      ko: https://trpg.slop.ai.kr/
+      en: https://trpg.slop.ai.kr/
 
 permalink: /:year/:month/:day/:title/
 # ForgeFlow 업데이트 노트: 버전마다 한국어·영어 한 쌍(_forgeflow_updates/버전.ko.md, 버전.en.md).
